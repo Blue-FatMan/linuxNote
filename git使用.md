@@ -1,3 +1,4 @@
+<div>
 <link rel="stylesheet" href="http://yandex.st/highlightjs/6.2/styles/googlecode.min.css">
 <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 <script src="http://yandex.st/highlightjs/6.2/highlight.min.js"></script>
@@ -18,6 +19,7 @@
  });
 </script>
 <div id="category"></div>
+</div>
 
 # 简单的代码提交流程
 1. _git status_ 查看工作区代码相对于暂存区的差别
