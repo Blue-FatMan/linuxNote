@@ -1,3 +1,26 @@
+<link rel="stylesheet" href="http://yandex.st/highlightjs/6.2/styles/googlecode.min.css">
+ 
+<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script src="http://yandex.st/highlightjs/6.2/highlight.min.js"></script>
+ 
+<script>hljs.initHighlightingOnLoad();</script>
+<script type="text/javascript">
+ $(document).ready(function(){
+      $("h2,h3,h4,h5,h6").each(function(i,item){
+        var tag = $(item).get(0).localName;
+        $(item).attr("id","wow"+i);
+        $("#category").append('<a class="new'+tag+'" href="#wow'+i+'">'+$(this).text()+'</a></br>');
+        $(".newh1").css("margin-left",0);
+        $(".newh2").css("margin-left",20);
+        $(".newh3").css("margin-left",40);
+        $(".newh4").css("margin-left",60);
+        $(".newh5").css("margin-left",80);
+        $(".newh6").css("margin-left",100);
+      });
+ });
+</script>
+<div id="category"></div>
+
 # 简单的代码提交流程
 1. _git status_ 查看工作区代码相对于暂存区的差别
 
