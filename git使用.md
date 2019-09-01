@@ -1,8 +1,6 @@
 <link rel="stylesheet" href="http://yandex.st/highlightjs/6.2/styles/googlecode.min.css">
- 
 <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 <script src="http://yandex.st/highlightjs/6.2/highlight.min.js"></script>
- 
 <script>hljs.initHighlightingOnLoad();</script>
 <script type="text/javascript">
  $(document).ready(function(){
