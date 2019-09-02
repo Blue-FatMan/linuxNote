@@ -19,7 +19,8 @@ def get_catalog(file_path):
     :param file_path: file md path
     :return:
     """
-    with open(file_path, 'r', encoding="utf8") as fr:
+    encoding = "gbk"
+    with open(file_path, 'r', encoding=encoding) as fr:
         lines_list = fr.readlines()
 
     catalog_list = []
@@ -68,14 +69,14 @@ def get_catalog(file_path):
         else:
             catalog_list.extend(lines_list)
         try:
-            with open(file_path, 'w', encoding="utf8") as fw:
+            with open(file_path, 'w', encoding=encoding) as fw:
                 fw.write("".join(catalog_list))
 
         except:
-            with open(file_path, 'w', encoding="utf8") as fw:
+            with open(file_path, 'w', encoding=encoding) as fw:
                 fw.write("".join(lines_list))
 
 
 if __name__ == '__main__':
-    file_path = "git使用.md"
+    file_path = "字符串切割.md"
     get_catalog(file_path)
