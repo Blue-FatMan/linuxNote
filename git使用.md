@@ -1,25 +1,28 @@
-<div>
-<link rel='stylesheet' href='http://yandex.st/highlightjs/6.2/styles/googlecode.min.css'>
-<script src='http://code.jquery.com/jquery-1.7.2.min.js'></script>
-<script src='http://yandex.st/highlightjs/6.2/highlight.min.js'></script>
-<script>hljs.initHighlightingOnLoad();</script>
-<script type='text/javascript'>
- $(document).ready(function(){
-      $('h1,h2,h3,h4,h5,h6').each(function(i,item){
-        var tag = $(item).get(0).localName;
-        $(item).attr("id","wow"+i);
-        $('#category').append("<a class='new"+tag+"' href='#wow"+i+"'>"+$(this).text()+"</a></br>");
-        $('.newh1').css('margin-left',0);
-        $('.newh2').css('margin-left',20);
-        $('.newh3').css('margin-left',40);
-        $('.newh4').css('margin-left',60);
-        $('.newh5').css('margin-left',80);
-        $('.newh6').css('margin-left',100);
-      });
- });
-</script>
-<div id='category'></div>
-</div>
+# 目录
+
+[目录](#目录)
+
+[简单的代码提交流程](#简单的代码提交流程)
+
+[Git add](#git-add)
+
+[Git commit](#git-commit)
+
+[Git push](#git-push)
+
+[简单的分支操作](#简单的分支操作)
+
+[简单的分支合并](#简单的分支合并)
+
+&nbsp;&nbsp;&nbsp;&nbsp;[merge合并](#merge合并)
+
+&nbsp;&nbsp;&nbsp;&nbsp;[rebase合并](#rebase合并)
+
+[merge和rebase的区别](#)
+
+[代码下拉方法](#代码下拉方法)
+
+====================
 
 # 简单的代码提交流程
 1. _git status_ 查看工作区代码相对于暂存区的差别
