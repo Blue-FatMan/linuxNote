@@ -56,7 +56,9 @@ def get_catalog(file_path):
                 catalog = catalog.group().replace("[", "").replace("]", "")
             else:
                 catalog_url = catalog.lower()
-                catalog_url = catalog_url.replace(" ", "-")
+                catalog_url = catalog_url.replace(" ", "-").replace(".","").replace("·","").replace("+","").\
+                    replace("*","").replace("/","").replace("?","").replace("!","").replace("@","").replace("$","").\
+                    replace("%", "").replace("^","").replace("&","").replace("，","").replace('"',"").replace("'","")
             catalog_list.append(space_count * catalog_space + catalog_format.format(catalog, catalog_url))
     if catalog_list:
         catalog_list.insert(0,"# 目录\n\n")
@@ -78,5 +80,5 @@ def get_catalog(file_path):
 
 
 if __name__ == '__main__':
-    file_path = "字符串切割.md"
+    file_path = "日志记录.md"
     get_catalog(file_path)
