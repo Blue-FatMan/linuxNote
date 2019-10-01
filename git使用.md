@@ -142,3 +142,11 @@ merge操作会生成一个新的节点，之前的提交分开显示。
 - git pull --rebase = git fetch + git rebase
 
 - [简单对比git pull和git pull --rebase的使用](https://www.cnblogs.com/kevingrace/p/5896706.html)
+
+# 撤销
+当你在修改某个文件之后，突然又不想修改了，想把它改回去，但是又忘记改之前是什么代码了
+这个时候就可以使用撤销命令了
+
+- git checkout filename
+这条命令是把当前的修改撤销到上一次add的时候，，注意，这个文件必须是已经add过的文件，
+而且还是得没有commit的文件，如果已经commit了，那就要
